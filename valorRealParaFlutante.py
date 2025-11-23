@@ -134,17 +134,17 @@ if __name__ == "__main__":
         print("\nIeee 754 permite diferentes modos de arredondamentos enquanto linguagens de programação usam seus proprio modos distintos, que altera o resultado final por varios motivos, um deles podendo ser a limitação de bits."),
         print("\nO corportamento de execeções em linguagens normais faz com que aperação valores invalidos ou denormalizados invês do Ieee 754.")
 
-    simOuNao2 = input("Quer ouvir mais? (Y/N) ")
+        simOuNao2 = input("Quer ouvir mais? (Y/N) ")
 
-    if (simOuNao2 == "Y" or simOuNao2 == "y") :
-        print("\nO Resultado obtido pela calculadora foi exatamente o mesmo da operação normal? Não, foi muito diferente, que como explicado anteriormente, foi por causa de erro de arredodamento representados pela falta de precisão no binário por parte da operação normal, e o corportamento de execeções em linguagens normais"),
-        print("\nHouve diferença no valor binário do resultado? Houve sim, porque somou diretamente os valores dos dois resultados, porque a linguagem natural não reconhece os numeros como binario e com isso, não faz o calculo corretamente"),
-        print("\nComo o arredondamento e a limitação de bits influenciam os cálculos? TODO")
-    
-    simOuNao3 = input("Quer ouvir mais? (Y/N) ")
+        if (simOuNao2 == "Y" or simOuNao2 == "y") :
+            print("\nO Resultado obtido pela calculadora foi exatamente o mesmo da operação normal? \nNão, foi muito diferente, que como explicado anteriormente, foi por causa de erro de arredodamento representados pela falta de precisão no binário por parte da operação normal, e o corportamento de execeções em linguagens normais"),
+            print("\nHouve diferença no valor binário do resultado? \nHouve sim, porque somou diretamente os valores dos dois resultados, porque a linguagem natural não reconhece os numeros como binario e com isso, não faz o calculo corretamente"),
+            print("\nComo o arredondamento e a limitação de bits influenciam os cálculos? \nO problema principal é que computadores tem memoria finita e não consegue representar todos os numeros na matématica, que caso tenha muitos numeros negativos ou postivos ou um grande numero fracionario, teriamos underflow ou overflow, então, é preciso ter uma limitação nos bits do computador para isso não acontecer, mais mesmo assim temos problemas de precisão, aonde o comprimento da mantissa, também limitado pela memoria finita, não consegue representar todos os possiveis numeros, então, arrendondamos pro numero mais proximo caso não for conseguido ser exibido nela, dando pequenos erros no resultado final por causa deste problema de memoria.")
 
-    if (simOuNao3 == "Y" or simOuNao3 == "y") :
-        print("\nTODO"),
-        print("\nTODO")
+            simOuNao3 = input("Quer ouvir mais? (Y/N) ")
+
+            if (simOuNao3 == "Y" or simOuNao3 == "y") :
+                print("\nPor que numeros como 0.1 ou 0.2 não são representados exatamente no formato IEEE 754?\n Isso é porque eles não são compativeis entre as bases decimais e binárias, e como dito anteriormente, com sua memoria infinita, não conseguem representar esses numeros complentos sem ter overflow, então, seu valor é arrendado para o mais proximo."),
+                print("\nQue tipo de erro numérico esse fenômeno representa? \n Esse fenomeno representa principalmente o de cancelamento catastrofico e erro relativo. Erro relativo, por aproximar um valor para arrendondar-lo pro seu valor de referencia mais exato, e cancelamento catastrófico, porque já estamos subtraindo dois numeros já aproximados por erro relativo, se cancelando e aumentando o erro relativo da equação final entre esses dois numeros, maior que antes da conta.")
 
 
