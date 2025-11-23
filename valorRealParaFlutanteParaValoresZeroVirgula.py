@@ -42,7 +42,7 @@ def pontoFlutuante(numeroInt):
     fracaoStr = binarioFracao(numeroInt - int(numeroInt))
 
     # Chamando esse index para casos aonde o bit é muito alto para representar o binario em um numero inteiro.
-    ind = intStr.index('1')
+    ind = intStr.index('0')
 
     # Agora, declara o bit do expoente.
     bitExpoente = bin((len(intStr) - ind - 1) + 127)[2 : ]
@@ -146,5 +146,3 @@ if __name__ == "__main__":
     if (simOuNao3 == "Y" or simOuNao3 == "y") :
         print("\nTODO"),
         print("\nTODO")
-
-
